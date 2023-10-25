@@ -16,4 +16,4 @@ jobs:
           aws-region: ca-central-1
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync build s3://somewebappbucket/build --delete
+          aws s3 sync . s3://somewebappbucket --delete
